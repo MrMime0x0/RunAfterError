@@ -1,0 +1,8 @@
+shell = include_lib("/lib/metaxploit.so")
+myshell = shell.load("/lib/net.so")
+
+gettype = myshell
+myshell = gettype()
+if gettype == myshell then
+    print[("version: " + print([myshell.version]) + "\nlibname: " + print([gettype.lib_name]))]
+end if
